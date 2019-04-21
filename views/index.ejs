@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Team Roster</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+
+  <body>
+    <div id="app">
+      <h1 class="heading">Team Roster</h1>
+      <div v-for="member in membersList" :key="member.name" class="member">
+        <div class="image">
+          <img :src="member.image_url"/>
+        </div>
+        <div class="description">
+          <div class="name">{{ member.name }}</div>
+          <div class="title">{{ member.title }}</div>
+          <p>{{ member.bio }}</p>
+          <vote-count :name="member.name" :vote-members="voteMembers"></vote-count>
+        </div>
+
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="/javascripts/index.js"></script>
+  </body>
+
+</html>

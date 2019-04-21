@@ -1,0 +1,52 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
+
+a {
+  color: #00B7FF;
+  text-decoration: none; }
+
+.member {
+  display: flex;
+  padding: 35px 0;
+  border-top: 1px solid gray; }
+
+.image {
+  flex: 1; }
+  .image img {
+    width: 100%; }
+
+.description {
+  flex: 3;
+  padding-left: 10px; }
+
+.vote {
+  margin-top: 15px; }
+
+.icon {
+  width: 20px;
+  filter: invert(55%) sepia(70%) saturate(2430%) hue-rotate(163deg) brightness(100%) contrast(104%); }
+
+/* Text Styles */
+.bold {
+  font-weight: bold; }
+
+.heading {
+  color: orange;
+  font-weight: normal;
+  font-size: 36px; }
+
+.name {
+  font-size: 24px;
+  font-weight: normal; }
+
+.title {
+  font-size: 20px;
+  font-weight: normal; }
+
+/* Media queries */
+@media only screen and (min-width: 768px) {
+  #app {
+    width: 50%;
+    margin: 50px auto; } }
+
+/*# sourceMappingURL=style.css.map */
